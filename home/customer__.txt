@@ -1,0 +1,70 @@
+<?php
+include_once('headerpage.php');
+include_once('connect.php');
+include_once('utils.php');
+?>
+
+<?php
+include_once('headerpage.php');
+include_once('connect.php');
+include_once('utils.php');
+?>
+
+
+<?php include_once('headerpage.php'); 
+include_once('connect.php'); 
+include_once('utils.php'); 
+?> 
+<?php $mysql = new Connection(); ?> 
+<?php if(!isset($_POST['submitForm'])) 
+{ 
+    //hide image alert('hiding image'); hide(); 
+} 
+?> 
+<div id="main-content" style="width: 1000px;"> 
+<div id="left-div" style="float: left; width: 50%;"> 
+<form name="submitForm" id="submitForm" action="" method="post"> 
+<table> 
+<tr> 
+<th> 
+<h3>Customer Registration form</h3> </th> 
+</tr> 
+<tr> 
+<td><input type="hidden" name="custId" id="custId"/>
+</td> 
+</tr> 
+<tr> 
+<td><b>First Name</b></td> 
+<td><input type="text" name="first-name" id="first-name"/></td> 
+</tr> 
+<tr> 
+<td><b>Sur Name</b></td> 
+<td><input type="text" name="sur-name" id="sur-name"/></td> 
+</tr> 
+<tr> <td><b>Mobile No</b></td> 
+<td><input type="text" name="mobile-no" id="mobile-no"/>
+</td> 
+</tr> 
+<tr> 
+<td><b>Email</b></td> 
+<td><input type="text" name="email" id="email"/></td> 
+</tr> 
+<tr> <td><b>Country</b></td> <td> 
+<select name="country" id="country"> 
+<?php ?> 
+</select> 
+</td> 
+</tr> 
+<tr> 
+<td><b>First Name</b></td> 
+<td><input type="text" name="first-name" id="first-name"/></td> 
+</tr> 
+<tr> <td><b>First Name</b></td> 
+<td><input type="text" name="first-name" id="first-name"/>
+</td> </tr> 
+</table> 
+</form> 
+<div id="main-div">
+<div id="right-div" style="float: left; width: 50%;"></div> 
+<div id="right-div" style="float: left; width: 50%;"></div>
+</div>

@@ -1,0 +1,145 @@
+body{
+    background-color:  navy; /*royalblue olivedrab*/
+    margin: auto;
+}
+input.invalid{
+    background-color: red;
+}
+
+input.valid{
+    background-color: white;
+}
+
+.content{
+
+    float: left;
+    width: 25%;
+    color: black;
+    /*background-color: gold;
+      border: thin solid blue;
+      background-color: white;*/
+}
+
+a.content :visited {
+    color: white;
+}
+
+ul{display:block;}
+
+#main_div{
+
+ /*   position: absolute;
+    top: 0;
+    left: 130px;
+
+    margin-top: 30px;*/
+    margin: auto;
+    /*margin-left: 210 px;*/
+    width: 1000px;
+    height: 150px;
+    background-color: white;
+    border: thick solid  blue;
+    /*text-align: center;*/
+}
+
+form{
+    color: white;
+}
+
+
+li{
+   /* float: left;*/
+    display: inline-block;
+   /* margin-left: 20px;*/
+
+
+}
+
+a{
+    text-decoration: none;
+}
+image{
+    margin: auto;
+}
+
+#header_div a a:visited {
+    /*color: black;*/
+    color: lightgoldenrodyellow;
+}
+a:link  {
+    color: lightgoldenrodyellow ;
+    /*royalblue*/
+}
+
+ul li{
+    text-decoration: none;
+
+}
+
+/*div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+    font-weight: bold;
+}*/
+
+ul li > a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    /*width: auto; 150px
+    height: 20px;
+    background-image: url('http://localhost/lhdi/images/bitmap.png');*/
+
+
+}
+
+table{
+    color: white;
+}
+.home{
+    /*float: left;*/
+    margin-left: -30px;
+}
+
+#footer_div{
+    color: red;
+    font-weight: bold;
+    clear: both;
+    text-align: center;
+    margin: auto;
+    width: 1000px;
+    background-color: white;
+    border: thin solid  olivedrab;
+}
+
+ul li:hover {background:#0000ff !important;}
+
+#text_content_div{
+    width: 1255px;
+    height: 290px;
+    margin: auto;
+    border: thick red solid;
+    background-color: white;
+}
+
+#question_div{
+
+    height: auto;
+    width: auto;
+    background-color: white;
+    color:black;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    overflow: scroll;
+}
+.readonly{
+    background-color: #23527c;
+}

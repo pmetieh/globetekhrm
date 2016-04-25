@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Stop Ebola Transmission</title>
+<script src="../jQuery/jquery-1.11.0.js" type="text/javascript"></script>
+<link href="../css/globetek.css" media="all" type="text/css" rel="stylesheet" />
+<!--required for the date picker control-->
+
+<script src="../jQueryUI/jquery-ui.js"></script>
+<link rel="stylesheet" href="../jQueryUI/jquery-ui.css" />
+<script src="../jQueryUI/script.js"></script>
+<link rel="stylesheet" href="../css/runnable.css" media="all" type="text/css"/>
+
+
+
+</head>
+<body>
+   <div id="fb-root"></div>
+    <script>
+       window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+<div id="top_header">
+<img class="changeImage" src="../images/background.jpg" alt="image1"/>
+<!--<img class="hidden" src="../images/set1.jpg" alt="image5"/>
+<img class="hidden" src="../images/set3.jpg" alt="image4"/>
+<img  class="hidden" src="../images/webbanner2.jpg" alt="image2"/>
+<img class="hidden" src="../images/webbanner6.jpg" alt="image6"/>-->
+</div>
+<img id="logo" alt="logo" src="../images/setbanner.jpg"/>
+<!--<span id="logoText">Logo</span>-->
+<div id="menu_wrapper" >  
+<ul id="topNav">
+<li style="position: relative; left: 0;"><a href="index.php">Home</a></li>
+<li><a href="organizationprofile.php">Organization Profile</a></li>
+<!--<li><a href="#">Services</a>
+    <ul id="subNav">
+        <li><a href="surveying.php">Surveying</a></li>
+        <li><a href="landmanagement.php">Land Management</a></li>
+        <li><a href="housingdev.php">Housing Development</a></li>
+        <li><a href="surveynotice.php">Survey Notice</a></li>
+        <li><a href="realestateservices.php">Real Estate Services</a></li>
+        <li><a href="download.php">View Info</a></li>
+        <li><a href="consulting.php">Consulting</a></li>
+        <li><a href="#">Software Development</a></li>
+        <li><a href="#">License Sales</a></li>
+        <li><a href="#">Structure Cabling</a></li>
+        <li><a href="#">Wireless Networks</a></li>
+    </ul>
+</li>-->
+<li><a href="#">Partners</a>
+    <!--<ul id="subNavTraining">
+        <li><a href="publicsector.php">Public Sector</a></li>
+        <li><a href="privatesector.php">Private Sector</a></li>
+        <li><a href="">Oracle</a></li>
+        <li><a href="#">Cisco</a></li>
+        <li><a href="#">Linux</a></li>  
+        <li><a href="#">Mobile Development</a></li>
+   </ul>-->
+</li>
+<li><a href="partners.php">Donors</a></li>
+<li><a href="#">Projects</a>
+    <ul id="subNavProducts">
+        <li><a href="pastprojects.php">Past Projects</a></li>
+        <li><a href="currentprojects.php">Current Projects</a></li>
+    </ul>
+</li>
+<li><a href="managementteam.php">Management Team</a>
+    <!--<ul>
+            <li><a href="#">Public Sector</a></li>
+            <li><a href="#">Private Sector</a></li>
+    </ul>-->
+</li>
+<li><a href="articles.php">Articles</a></li>
+<li><a href="forum.php">Forum</a></li>
+<li><a href="news.php">News</a></li>
+<li><a href="contactus.php">Contact Us</a></li>
+</ul>
+</div><!--end menu div--!>
+<!--<div id="main_body" style="height: 100%; width: 1000px; background-color: blue; color: white;">
+<h2>Welcome to Land Housing And Development Inc</h2>
+    <div id="left_col" style="float:left; width: 73%; border-right:green solid thin;">
+        <h3>Left Column</h3>
+    </div>
+
+<div id="right_col" style="float: left; width: 25%;">
+    <h3>Right Column</h3>
+</div>
+</div>-->
+ 
+ <div id="main-div">
+ <form id="house-numbering-form" name="house-numbering-form" action="" method="post">
+ <table>
+ <tr>
+ <td><b>Team No.</b></td>
+ <td><input type="text" name="team-no" id="team-no"/></td>
+ </tr>
+ <tr>
+ <td><b>Report No.</b></td>
+ <td><input type="text" id="report-no" name="report-no"/></td>
+ </tr>
+ <tr>
+ <td><b>House no.</b></td>
+ <td><input type="text"  name="house-no" id="house-no"/></td>
+ </tr>
+ <tr>
+ <td><b>Principal First Name</b></td>
+ <td><input type="text" id="principalFName" name="principalFName"/></td>
+ </tr>
+ <tr>
+ <td><b>Principal Other Name</b></td>
+ <td><input type="text" name="principalOname" id="principalOname"/></td>
+ </tr>
+ <tr>
+ <td><b>Principal SurName</b></td>
+ <td><input type="text" name="principalSName" id="principalSName"/></td>
+ </tr>
+ <tr>
+ <td><b>Gender</b></td>
+ <td><input type="text" name="gender" id="gender"/></td>
+ </tr>
+ <tr>
+ <td><b>Date Of Birth</b></td>
+ <td><input type="text" name="dob" id="dob"/></td>
+ </tr>
+ <tr>
+ <td><b>Mobile Number</b></td>
+ <td><input type="text" name="mobileNo" id="mobileNo"/></td>
+ </tr>
+ <tr>
+ <td><b>Email</b></td>
+ <td><input type="text" name="email" id="email"/></td>
+ </tr>
+ <tr>
+ <td><b>GPS-EUTM</b></td>
+ <td><input type="text" name="eutm" id="eutm"/></td>
+ </tr>
+ <tr>
+ <td><b>GPS-NUTM</b></td>
+ <td><input type="text" name="nutm" id="nutm"/></td>
+ </tr>
+ </table>
+ <div id="submitAction" style="width: 400px; height: 27px; border: blueviolet solid thin; background-image:url('../images/tn_bitmap.jpg') ; margin-bottom: 10px;">
+    <div id="submitDiv" style="float: left; width: 50%">
+            <input type="submit" id="submit" name="submit" value="Submit Data" style="font-weight: bold;"/>      
+    </div>
+    <div id="cancelDiv" style="float: left; width: 45%; margin-left: 10px;  border-left-style: solid;;">
+            <input type="reset" id="reset" name="reset" value="Cancel" style="float: right; font-weight: bold;"/>
+    </div>
+    
+</div> </form>
+ </div>
+ <div id="footer">
+<h6>Copy Right &copy  SET &nbsp;&nbsp;<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\WAMP\www\set\home\footerpage.php on line <i>3</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0240</td><td bgcolor='#eeeeec' align='right'>130928</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\WAMP\www\set\home\HouseNumberPlan.php' bgcolor='#eeeeec'>..\HouseNumberPlan.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.1613</td><td bgcolor='#eeeeec' align='right'>133216</td><td bgcolor='#eeeeec'>include_once( <font color='#00bb00'>'C:\WAMP\www\set\home\footerpage.php'</font> )</td><td title='C:\WAMP\www\set\home\HouseNumberPlan.php' bgcolor='#eeeeec'>..\HouseNumberPlan.php<b>:</b>64</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.1614</td><td bgcolor='#eeeeec' align='right'>133592</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.date' target='_new'>date</a>
+(  )</td><td title='C:\WAMP\www\set\home\footerpage.php' bgcolor='#eeeeec'>..\footerpage.php<b>:</b>3</td></tr>
+</table></font>
+Tue 16 Sep  2014 : 01 : 09: 54 <br />
+Designed By Globetek Services International Ltd </h6>
+</div>
+</body>
+</html>PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\WAMP\www\set\home\footerpage.php on line 3
+PHP Stack trace:
+PHP   1. {main}() C:\WAMP\www\set\home\HouseNumberPlan.php:0
+PHP   2. include_once() C:\WAMP\www\set\home\HouseNumberPlan.php:64
+PHP   3. date() C:\WAMP\www\set\home\footerpage.php:3

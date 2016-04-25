@@ -1,0 +1,253 @@
+body{
+    background-color: olivedrab ;
+    /*darkgoldenrod: #b8860b royalblue
+    #daa520
+     goldenrod: #daa520
+    */
+    margin: auto;
+}
+.content{
+
+    float: left;
+    width: 23%;
+    /*  border: thin solid blue;
+      background-color: white;*/
+}
+
+a.content :visited {
+    color: darkgoldenrod;
+    /*white*/
+}
+
+#main_div{
+
+    position: absolute;
+    top: 0px;
+    left:210px;
+    /*margin-top: 30px;*/
+    margin-left: 210 px;
+    width: 1000px;
+    background-color: white;
+    border: thin solid  olivedrab;
+    text-align: center;
+}
+
+li{
+    float: left;
+    display: block;
+    margin-left: 15px;
+
+}
+
+a{
+    text-decoration: none;
+}
+image{
+    margin: auto;
+}
+
+#logo {
+    float: left;
+    width: 15%;
+    position: relative;
+    border: thin solid orangered;
+}
+
+#header_div{
+    height: 80px;
+    float: left;
+    width: 80%;
+    position: relative;
+
+}
+
+#header_div a:visited a:link {
+    color: black;
+}
+
+ul{
+    position: relative;
+    top: 15px;
+    /*margin-top: 5px;*/
+
+}
+
+.changeImage{
+   /* position: absolute;
+    float: left;
+     height:200px;*/
+    left: 0;
+    top: 0;
+    width: 500px;
+
+    z-index: 10;
+}
+
+.hidden{
+
+    display: none;
+    z-index: 0;
+}
+#image_div{
+    clear: both;
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 1000px;
+    /*background-image: url('http://localhost:90/lhdi/images/bitmap.png');*/
+    padding-bottom: 10px;
+}
+
+ul > li {
+    /*display: inline;*/
+    float:  left;
+    position: relative;
+    /*background-color: olive;*/
+    /*background-image: url('http://localhost:90/lhdi/images/bitmap.png');*/
+    /*height: 20px;
+    width: 150px;*/
+    margin-right: 5px;
+    /* margin-bottom: 3px;*/
+    padding: 0px;
+
+}
+
+
+ul li > ul {display: none;}
+
+/***/
+* ul li:hover > ul {
+    display: block;
+    width: 150px;
+    position: absolute;
+    top: 30px;
+}
+
+
+div#top_header{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin: 0px;
+    z-index: 2;
+}
+
+ul li > a{
+    background-image: url('http://localhost/globetekhrm/images/bitmap.png');
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+} /* first level links*/
+
+ul li ul li > a {
+    display: block;
+    text-decoration: none;
+    color: yellow;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    width: 150px;
+    background-image: url('http://localhost/globetekhrm/images/bitmap.png');
+    margin-bottom: 3px;
+}
+
+ul li ul li:hover > a{
+    background-color: black;
+}
+
+div#footer{
+    width: 1000px;
+    height: 30px;
+    background-color: #36C94D;
+    text-align: center;
+
+
+}
+div#footer h6{
+    /*padding-top:2px;
+    margin-top: 20px;*/
+    font-size: 0.5em;
+    vertical-align: top;
+
+}
+
+div#footer{
+    clear: both;
+}
+
+.changeImage{
+    position: absolute;
+    float: left;
+    left: 0px;
+    top: 0px;
+    width: 1000px;
+    height:200px;
+    z-index: 10;
+
+}
+
+.hidden{
+
+    display: none;
+    z-index: 0;
+}
+
+.rightCol{
+    float: left;
+    width: 700px;
+    /*background-color: lightcoral;*/
+}
+.leftCol {
+    float: left;
+    width: 299px;
+    /* background-color: firebrick;*/
+    text-align: right;
+}
+img#logo{
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+
+}
+span#logoText{
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index:4;
+
+}
+
+.textwrap{
+
+    float: left;
+    border: olive solid thin;
+    margin-right: 3px;
+}
+
+.contentLeft{
+    float: left;
+    width: 48%;
+    margin-right: 10px;
+}
+
+.contentRight{
+    float: left;
+    width: 48%;
+}
+.subcontent{
+    color: darkgoldenrod;
+}

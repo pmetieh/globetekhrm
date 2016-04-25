@@ -1,0 +1,195 @@
+<?php
+
+/**
+ * @author lolkittens
+ * @copyright 2014
+ */
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+<?php
+	echo 'LHDI Home';
+?>
+</title>
+<script src="../jQuery/jquery-1.11.0.js" type="text/javascript"></script>
+<link href="../css/globetek.css" media="all" type="text/css" rel="stylesheet" />
+</head>
+<body>
+   <div id="fb-root"></div>
+    <script>
+       window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+<div id="top_header">
+<img class="changeImage" src="../images/webbanner1.jpg" alt="image1"/>
+<img class="hidden" src="../images/webbanner5.jpg" alt="image5"/>
+<img class="hidden" src="../images/webbanner3.jpg" alt="image4"/>
+<img  class="hidden" src="../images/webbanner2.jpg" alt="image2"/>
+<img class="hidden" src="../images/webbanner6.jpg" alt="image6"/>
+</div>
+<img id="logo" alt="logo" src="../images/logo.png"/>
+<span id="logoText">Logo</span>
+<div id="menu_wrapper" style="width: 1000px; height: 30px; background-color: #36C94D; padding-top: 15px; margin-top: 10px;">  
+<ul id="topNav">
+<li style="position: relative; left: 0;"><a href="index.php">Home</a></li>
+<li><a href="companyprofile.php">Company Profile</a></li>
+<li><a href="#">Services</a>
+    <ul id="subNav">
+        <li><a href="customer.php">Surveying</a></li>
+        <li><a href="landmanagement.php">Land Management</a></li>
+        <li><a href="housingdev.php">Housing Development</a></li>
+        <li><a href="surveynotice.php">Survey Notice</a></li>
+        <li><a href="realestateservices.php">Real Estate Services</a></li>
+        <li><a href="download.php">View Info</a></li>
+        <li><a href="consulting.php">Consulting</a></li>
+        <!--<li><a href="#">Software Development</a></li>
+        <li><a href="#">License Sales</a></li>
+        <li><a href="#">Structure Cabling</a></li>
+        <li><a href="#">Wireless Networks</a></li>-->
+    </ul>
+</li>
+<li><a href="#">Clients</a>
+    <ul id="subNavTraining">
+        <li><a href="publicsector.php">Public Sector</a></li>
+        <li><a href="privatesector.php">Private Sector</a></li>
+        <!--<li><a href="">Oracle</a></li>
+        <li><a href="#">Cisco</a></li>
+        <li><a href="#">Linux</a></li>  
+        <li><a href="#">Mobile Development</a></li>-->
+   </ul>     
+</li>
+<li><a href="partners.php">Partners</a></li>
+<li><a href="#">Projects</a>
+    <ul id="subNavProducts">
+        <li><a href="pastprojects.php">Past Projects</a></li>
+        <li><a href="currentprojects.php">Current Projects</a></li>
+    </ul>
+</li>
+<li><a href="managementteam.php">Management Team</a>
+    <!--<ul>
+            <li><a href="#">Public Sector</a></li>
+            <li><a href="#">Private Sector</a></li>
+    </ul>-->
+</li>
+<li><a href="articles.php">Articles</a></li>
+<li><a href="forum.php">Forum</a></li>
+<li><a href="forum.php">Public Notice</a></li>
+<li><a href="contactus.php">Contact Us</a></li>
+</ul>
+</div><!--end menu div--!>
+<!--<div id="main_body" style="height: 100%; width: 1000px; background-color: blue; color: white;">
+<h2>Welcome to Land Housing And Development Inc</h2>
+    <div id="left_col" style="float:left; width: 73%; border-right:green solid thin;">
+        <h3>Left Column</h3>
+    </div>
+
+<div id="right_col" style="float: left; width: 25%;">
+    <h3>Right Column</h3>
+</div>
+</div>-->
+<script lang="javascript" type="text/javascript">
+$(function(){
+    
+     
+    $('ul > li').hover(
+    function(){ 
+        $('ul', this).css({display: "block",
+                           width : "150px";,
+                           position: "absolute",
+                           top: "30px" });
+        $('ul', this).stop().slideDown(2000)}, function(){$('ul', this).stop().slideUp(3000)})
+})
+
+$(function(){
+   // alert('Switching image');
+    
+     
+    switchImge();
+    setInterval(function(){switchImge()}, 10000); //alert($('img').hasClass('hidden'));
+})
+
+var visibleImage;
+
+function switchImge(){
+    
+        visibleImage = $('.changeImage');
+       // alert('First vissible image ' + visibleImage.length);
+        var nextImage = visibleImage.next();
+        //alert('next image : ' + nextImage.length);
+        //alert('next image : ' + $('img', this).attr('Id'));
+        //we have reached the end of the set of images
+        //then wrap arround to the first image
+        //getAttribute('id'));
+        if(nextImage.length == 0)
+        {
+            //move to the first
+            nextImage = $('img').first();
+         //  alert(nextImage.attr('is'));
+        }
+        
+        //this is where the change happens
+        if(nextImage.hasClass('hidden'))
+        {
+            //alert('Yes next img has class ' + nextImage.attr('id'));
+            //change the class on the visible image to hidden
+            visibleImage.removeClass('changeImage').addClass('hidden').fadeOut(100);
+            //move the next image with class hidden into position 
+            nextImage.removeClass('hidden').addClass('changeImage').fadeIn(100);
+             //make the next image visible
+          //alert('Yes image changed');
+         
+            visibleImage = nextImage.next('img');
+        
+        }
+         
+         
+        
+        
+       
+      //  alert('Visible Image ' + visibleImage.length );
+    
+     
+      
+                
+    
+     
+}
+</script>
+
+
+
+<div id="footer">
+<div style="float: left;"
+  class="fb-like"
+  data-send="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+<div style="float: left;">
+<h6>Copy Right &copy  LHDI &nbsp;&nbsp;<?php
+ echo	date("D d M  Y : h : m: s"); 
+?> 
+<?php
+	echo 'Designed By Globetek Services International Ltd';
+?>
+ </h6>
+</div>
+</div>
+</body>
+</html>

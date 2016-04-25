@@ -1,0 +1,230 @@
+body{
+    background-color: navy; /*royalblue olivedrab*/
+    margin: auto;
+}
+
+input.invalid{
+    background-color: red;
+}
+
+input.valid{
+    background-color: white;
+}
+#text_content_div{
+    width: 1255px;
+    height: 290px;
+    margin: auto;
+    border: thick red solid;
+    background-color: white;
+}
+
+.content{
+
+    float: left;
+    width: 23%;
+    color: black;
+    position: relative;
+
+    /*background-color: gold;
+      border: thin solid blue;
+      background-color: white;*/
+}
+
+a.content :visited {
+    color: white;
+}
+
+#main_div{
+    margin: auto;
+    width: 1255px;
+    color: white;
+    /*margin-left: 210px;
+
+    background-color: white;
+    border: thin solid  olivedrab;*/
+    /*text-align: center;*/
+}
+
+/*
+.topMenu {
+    */
+/*float: left;*//*
+
+    display: inline-block;
+   */
+/* margin-left: 15px;*//*
+
+    margin-bottom: 10px;
+}
+
+.secondLevelMenu{
+    display: block;
+    margin-left: -40px;
+    text-align: left;
+    width: 100%;
+}
+*/
+
+a{
+    text-decoration: none;
+}
+image{
+    margin: auto;
+}
+
+a:link  {
+    color: lightgoldenrodyellow ;
+    /*royalblue*/
+}
+
+#header_div a a:visited {
+    /*color: black;*/
+    color: lightgoldenrodyellow;
+}
+
+/*ul li{
+
+    list-style: none;
+    display: inline-block;
+}*/
+
+/*ul li > a {
+    display: inline-block;
+    text-decoration: none;
+    color: yellow;
+    font-size: 14px;
+    font-weight: bold;
+    width: auto; *//* 350px*//*
+    background-image: url('http://localhost/globetekhrm/images/bitmap.png');
+    margin-bottom: 3px;
+    padding: 10px;
+}*/
+
+.home{
+    float: left;
+    margin-left: -50px;
+}
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {display: inline-block;}
+
+/*ul li > ul {display: none;}*/
+
+
+/*ul li:hover ul {
+    display: block;
+     width: 150px;
+     position: absolute;
+     top: 80px; shift the second level image down by 120px from the top of the page
+}*/
+
+.hoverClass{
+    display: block;
+    width: 200px;
+    visibility: visible;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    width: 200px;
+
+}
+
+ul li ul li {
+    background: #555;
+    display: block;
+}
+
+/*second level links   ul li ul li >  */
+ #header_div a {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
+     padding: 15px;
+     display:inline-block;
+     font-weight: bold;
+   /* position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: yellow;
+    font-size: 14px;
+
+    width: auto;*/
+   /* background-image: url('http://localhost/globetekhrm/images/bitmap.png');
+    margin-bottom: 3px;
+   padding: 10px;*/
+}
+
+#header_div{
+    height: 80px;
+    float: left;
+    width: 80%;
+    position: relative;
+
+}
+
+#footer_div{
+
+    color: red;
+    clear: both;
+    text-align: center;
+    margin-left: 130px;
+    width: 1000px;
+    background-color: white;
+    border: thin solid  olivedrab;
+}
+span{display:block;}
+
+.changeImage{
+     position: absolute;
+     /*float: left;
+      height:200px;*/
+    left: 0;
+    top: 0;
+    width: 1250px;
+
+    z-index: 10;
+}
+
+.hidden{
+
+    display: none;
+    z-index: 0;
+}
+#image_div{
+    clear: both;
+    /*position: relative;*/
+    height: 200px;
+    margin: auto;
+}
+
+
+
+/*this controls the pop up menu in the footer f the page*/
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+    font-weight: bold;
+}
+ul li {display: inline-block;}
+ul li:hover {background:#0000ff !important;}
+.nav {
+    width: 40px;
+    height: 40px;
+}
+
+table a:visited{
+    color: white;
+}
+
+.readonly{
+    background-color: #23527c;
+}
